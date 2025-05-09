@@ -1,4 +1,5 @@
 JAVAC       := javac
+SRC_DIR     := .
 JAVA        := java
 SRC_FILES   := SnakeGame.java GamePanel.java GameFrame.java
 CLASS_FILES := $(SRC_FILES:.java=.class)
@@ -15,5 +16,5 @@ run: build
 	$(JAVA) $(main)
 
 clean:
-	rm -f $(CLASS_FILES)
+	rm -f *.class '.*.swp'
 
